@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( SL_Birds_Eye_View )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable(birds_eye BirdsEyeView.cpp )
+target_link_libraries(birds_eye ${OpenCV_LIBS} )
